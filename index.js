@@ -15,6 +15,12 @@ export default class Hello360 extends React.Component {
             Welcome to React 360
           </Text>
         </View>
+        <View style={{flexDirection: 'row', height: 100, width: 600, padding: 20}}>
+          <View style={{backgroundColor: 'blue', flex: 0.3}} />
+          <View style={{backgroundColor: 'red', flex: 0.5}}>
+            <Text style={{color: 'black'}}>Hello World!</Text>
+          </View>
+        </View>
       </View>
     );
   }
