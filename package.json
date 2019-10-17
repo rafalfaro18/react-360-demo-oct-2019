@@ -9,7 +9,7 @@
     "devtools": "react-devtools",
     "test": "jest",
     "deploy": "gh-pages -d build",
-    "clean-source": "npm run bundle ; cp -r static_assets build"
+    "clean-source": "npm run bundle"
   },
   "dependencies": {
     "react": "16.3.2",
