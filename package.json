@@ -7,7 +7,9 @@
     "bundle": "node node_modules/react-360/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "gh-pages-deploy",
+    "clean-source": "npm run bundle; cp -r static_assets build"
   },
   "dependencies": {
     "react": "16.3.2",
@@ -19,6 +21,7 @@
   "devDependencies": {
     "babel-jest": "^19.0.0",
     "babel-preset-react-native": "^1.9.1",
+    "gh-pages-deploy": "^0.5.1",
     "jest": "^19.0.2",
     "react-devtools": "^2.5.2",
     "react-test-renderer": "16.0.0",
@@ -26,5 +29,12 @@
   },
   "jest": {
     "preset": "react-360"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "build",
+    "post": [
+      "rm -r build"
+    ],
+    "noprompt": false
   }
 }
