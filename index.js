@@ -18,13 +18,13 @@ export default class Hello360 extends React.Component {
           </Text>
         </View>
         <View style={{flexDirection: 'row', width: 900, height: 400, padding: 20}}>
-          <View style={{backgroundColor: 'blue', flex: 0.3}}>
-            <Text style={{color: 'black'}}>Hello World!</Text>
+          <View style={{backgroundColor: 'blue', flex: 1}}>
+            <Text style={{color: 'white'}}>Hello World!</Text>
           </View>
-          <View style={{backgroundColor: 'red', flex: 0.3}}>
+          <View style={{backgroundColor: 'red', flex: 1}}>
           </View>
-          <View style={{backgroundColor: 'transparent', flex: 0.3}}>
-            <Image style={{width: 300, height: 200, transform: [{scaleY : 0.5},{scaleX : 0.5}] }} source={asset('600x400.png')} />
+          <View style={{backgroundColor: 'rgba(0,255,0,0.3)', flex: 2}}>
+            <Image style={{width: 600, height: 400, transform: [{scaleY : 0.5},{scaleX : 0.5},{translateX: -100}] }} source={asset('600x400.png')} />
           </View>
         </View>
       </View>
